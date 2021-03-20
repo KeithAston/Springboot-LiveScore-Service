@@ -1,4 +1,4 @@
-package com.ka.matchinfoservice.services;
+package com.ka.matchinfoservice.models;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

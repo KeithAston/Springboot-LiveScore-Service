@@ -1,0 +1,12 @@
+port: 8085
+spring.application.name: match-lineups-service
+
+com:
+  ka:
+    livescore:
+      api-name: LiveScoreAPI
+      api-url: https://livescore-football.p.rapidapi.com/soccer
+      token-key: x-rapidapi-key
+      host-key: x-rapidapi-host
+      token: # insert your own token here for accessing API
+      host: livescore-football.p.rapidapi.com
