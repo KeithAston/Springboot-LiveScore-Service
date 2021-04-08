@@ -20,11 +20,20 @@ public class MatchInfoService {
 
     private final LiveScoreIntegrator liveScoreIntegrator;
     private final LiveScoreConfiguration liveScoreConfiguration;
+
+    private static final String DATE_PATTERN = "yyyyMMdd";
     private static final String LAST_GAME = "last";
     private static final String NEXT_GAME = "next";
     private static final String CURRENT_GAME = "current";
     private static final String FULL_TIME = "FT";
     private static final String NOT_STARTED = "NS";
+    private static final String DATA = "data";
+    private static final String MATCHES = "matches";
+    private static final String TEAM_1 = "team_1";
+    private static final String TEAM_2 = "team_2";
+    private static final String MATCH_ID = "match_id";
+    private static final String NAME = "name";
+    private static final String STATUS = "status";
 
     private Map<String,String> matchIds;
 
@@ -88,11 +97,11 @@ public class MatchInfoService {
 
     private String increment(String currDate,int increment) {
         try {
-            Date date = new SimpleDateFormat("yyyyMMdd").parse(currDate);
+            Date date = new SimpleDateFormat(DATE_PATTERN).parse(currDate);
             Calendar cal = Calendar.getInstance();
             cal.setTime(date);
             cal.add(Calendar.DATE, increment);
-            DateFormat dateFormat = new SimpleDateFormat("yyyyMMdd");
+            DateFormat dateFormat = new SimpleDateFormat(DATE_PATTERN);
             log.info("New Date : " + dateFormat.format(cal.getTime()));
             return dateFormat.format(cal.getTime());
         } catch (ParseException e) {
@@ -105,17 +114,17 @@ public class MatchInfoService {
         try {
             Match match = new Match();
             JSONObject jsonObject = new JSONObject(jsonResponse);
-            JSONArray data = jsonObject.getJSONArray("data");
+            JSONArray data = jsonObject.getJSONArray(DATA);
             JSONObject dataObj = data.getJSONObject(0);
-            JSONArray matches = dataObj.getJSONArray("matches");
+            JSONArray matches = dataObj.getJSONArray(MATCHES);
             for (int i = 0; i < matches.length(); i++) {
                 JSONObject matchObj = (JSONObject) matches.get(i);
-                JSONObject team1 = matchObj.getJSONObject("team_1");
-                JSONObject team2 = matchObj.getJSONObject("team_2");
-                if (teamName.equalsIgnoreCase((String) team1.get("name")) ||
-                        teamName.equalsIgnoreCase((String) team2.get("name"))) {
-                    match.setMatchID((String) matchObj.get("match_id"));
-                    match.setStatus((String) matchObj.get("status"));
+                JSONObject team1 = matchObj.getJSONObject(TEAM_1);
+                JSONObject team2 = matchObj.getJSONObject(TEAM_2);
+                if (teamName.equalsIgnoreCase((String) team1.get(NAME)) ||
+                        teamName.equalsIgnoreCase((String) team2.get(NAME))) {
+                    match.setMatchID((String) matchObj.get(MATCH_ID));
+                    match.setStatus((String) matchObj.get(STATUS));
                     return match;
                 }
             }
@@ -127,7 +136,7 @@ public class MatchInfoService {
     }
 
     private String getCurrDate(){
-        DateFormat dateFormat = new SimpleDateFormat("yyyyMMdd");
+        DateFormat dateFormat = new SimpleDateFormat(DATE_PATTERN);
         return dateFormat.format(new Date());
     }
 }

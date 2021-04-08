@@ -1,6 +1,7 @@
 package com.ka.matchstatsservice.controllers;
 
 import com.ka.matchstatsservice.models.Match;
+import com.ka.matchstatsservice.models.MatchStats;
 import com.ka.matchstatsservice.models.MatchWrapper;
 import com.ka.matchstatsservice.services.MatchStatsService;
 import lombok.AllArgsConstructor;

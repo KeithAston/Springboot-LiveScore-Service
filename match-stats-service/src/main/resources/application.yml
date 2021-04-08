@@ -1,4 +1,5 @@
-port: 8083
+server:
+  port: 8083
 spring.application.name: match-stats-service
 
 com:
@@ -6,5 +7,5 @@ com:
     livescore:
       api-name: LiveScoreAPI
       api-url: https://livescore-football.p.rapidapi.com/soccer
-      token: # insert your own token here for accessing API
+      token: fd5d97d5b7msh8b67447ac57b4b2p1befb4jsnc02c68deb61e
       host: livescore-football.p.rapidapi.com

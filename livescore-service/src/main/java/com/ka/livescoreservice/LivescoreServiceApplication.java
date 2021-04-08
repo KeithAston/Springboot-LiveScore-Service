@@ -17,4 +17,7 @@ public class LivescoreServiceApplication {
 		SpringApplication.run(LivescoreServiceApplication.class, args);
 	}
 
+	@LoadBalanced
+	@Bean
+	public RestTemplate getRestTemplate(){ return new RestTemplate();}
 }
