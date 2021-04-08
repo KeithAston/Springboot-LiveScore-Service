@@ -1,4 +1,5 @@
-port: 8082
+server:
+  port: 8082
 spring.application.name: match-info-service
 
 com:
@@ -6,8 +7,12 @@ com:
     livescore:
       api-name: LiveScoreAPI
       api-url: https://livescore-football.p.rapidapi.com/soccer
-      token: # insert your own token here for accessing API
+      token: fd5d97d5b7msh8b67447ac57b4b2p1befb4jsnc02c68deb61e
       host: livescore-football.p.rapidapi.com
       league-code: premier-league
       timezone: 0%3A00
       country-code: england
+
+eureka:
+  instance:
+    hostname: localhost

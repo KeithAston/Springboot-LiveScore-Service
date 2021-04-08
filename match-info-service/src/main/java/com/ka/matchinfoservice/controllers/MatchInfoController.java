@@ -10,13 +10,13 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.Map;
 
 @RestController
-@RequestMapping(value = "/livescore")
+@RequestMapping(value = "/matchInfo")
 @AllArgsConstructor
 public class MatchInfoController {
 
     private MatchInfoService matchInfoService;
 
-    @GetMapping(value = "/matchInfo/{teamName}")
+    @GetMapping(value = "/{teamName}")
     public Map<String, String> getMatchIDsBeingPlayedToday(@PathVariable(value = "teamName") String teamName){
         return matchInfoService.getMatchIDs(teamName);
     }

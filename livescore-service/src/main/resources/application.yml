@@ -1,2 +1,18 @@
 spring.application.name: livescore-service
-port: 8081
+server:
+  port: 8081
+
+com:
+  ka:
+    livescore:
+      matchids:
+        api-name: Match-Info-Service
+        api-url: "http://match-info-service/matchInfo/"
+
+      matchstats:
+        api-name: Match-Stats-Service
+        api-url: "http://match-stats-service/matchstats"
+
+      matchlineups:
+        api-name: Match-Lineups-Service
+        api-url: "http://match-lineups-service/matchlineups"

@@ -8,7 +8,6 @@ import org.springframework.stereotype.Component;
 @ConfigurationProperties("com.ka.livescore")
 @Data
 public class LiveScoreConfiguration {
-
     private String apiName;
     private String apiUrl;
     private String token;
