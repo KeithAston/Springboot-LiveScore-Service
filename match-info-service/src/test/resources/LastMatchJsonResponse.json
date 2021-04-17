@@ -1,0 +1,147 @@
+{
+  "status": 200,
+  "data": [
+    {
+      "league_id": "292",
+      "matches": [
+        {
+          "round": 30,
+          "match_id": "267594",
+          "status": "FT",
+          "team_2": {
+            "country": "England",
+            "name": "West Bromwich Albion",
+            "id": "3032"
+          },
+          "last_update": 20210403113033,
+          "team_1": {
+            "country": "England",
+            "name": "Chelsea",
+            "id": "2881"
+          },
+          "score": {
+            "full_time": {
+              "team_1": "2",
+              "team_2": "5"
+            },
+            "half_time": {
+              "team_1": "1",
+              "team_2": "2"
+            }
+          },
+          "time": {
+            "scheduled": 20210403113000,
+            "finish": 20210403132553,
+            "timezone": "0.00",
+            "start": 20210403113032
+          },
+          "round_info": "30"
+        },
+        {
+          "round": 30,
+          "match_id": "267593",
+          "status": "FT",
+          "team_2": {
+            "country": "England",
+            "name": "Sheffield United",
+            "id": "251"
+          },
+          "last_update": 20210403140418,
+          "team_1": {
+            "country": "England",
+            "name": "Leeds United",
+            "id": "3143"
+          },
+          "score": {
+            "full_time": {
+              "team_1": "2",
+              "team_2": "1"
+            },
+            "half_time": {
+              "team_1": "1",
+              "team_2": "1"
+            }
+          },
+          "time": {
+            "scheduled": 20210403140000,
+            "finish": 20210403155756,
+            "timezone": "0.00",
+            "start": 20210403140203
+          },
+          "round_info": "30"
+        },
+        {
+          "round": 30,
+          "match_id": "267600",
+          "status": "FT",
+          "team_2": {
+            "country": "England",
+            "name": "Manchester City",
+            "id": "12633"
+          },
+          "last_update": 20210403173313,
+          "team_1": {
+            "country": "England",
+            "name": "Leicester City",
+            "id": "2901"
+          },
+          "score": {
+            "full_time": {
+              "team_1": "0",
+              "team_2": "2"
+            },
+            "half_time": {
+              "team_1": "0",
+              "team_2": "0"
+            }
+          },
+          "time": {
+            "scheduled": 20210403163000,
+            "finish": 20210403182053,
+            "timezone": "0.00",
+            "start": 20210403163027
+          },
+          "round_info": "30"
+        },
+        {
+          "round": 30,
+          "match_id": "267586",
+          "status": "FT",
+          "team_2": {
+            "country": "England",
+            "name": "Liverpool",
+            "id": "3340"
+          },
+          "last_update": 20210403190023,
+          "team_1": {
+            "country": "England",
+            "name": "Arsenal",
+            "id": "2773"
+          },
+          "score": {
+            "full_time": {
+              "team_1": "0",
+              "team_2": "3"
+            },
+            "half_time": {
+              "team_1": "0",
+              "team_2": "0"
+            }
+          },
+          "time": {
+            "scheduled": 20210403190000,
+            "finish": 20210403205319,
+            "timezone": "0.00",
+            "start": 20210403190021
+          },
+          "round_info": "30"
+        }
+      ],
+      "league_name": "Premier League",
+      "country_id": "34",
+      "league_code": "premier-league",
+      "country_code": "england",
+      "country_name": "England"
+    }
+  ]
+}
