@@ -26,7 +26,7 @@ public class MatchStatsService {
     private static final String CROSSES = "crosses";
     private static final String FOULS = "fouls";
     private static final String SCORE = "score";
-    //intentional misspelling of possession below as response listed as 'possesion'
+    //intentional misspelling of possession below as json response key listed as 'possesion'
     private static final String POSSESSION = "possesion";
     private static final String SHOTS_ON_TARGET = "shots_on_target";
     private static final String NAME = "name";
