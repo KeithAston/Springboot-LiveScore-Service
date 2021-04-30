@@ -45,6 +45,10 @@ public class MatchServicesIntegrator {
         } catch (Exception e) {
             log.error(FAILED_CALL + MATCH_INFO_SERVICE + ERROR + e);
             return null; //TODO: throw custom exception
+
+
+
+
         }
     }
 

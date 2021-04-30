@@ -9,5 +9,5 @@ com:
       api-url: https://livescore-football.p.rapidapi.com/soccer
       token-key: x-rapidapi-key
       host-key: x-rapidapi-host
-      token: fd5d97d5b7msh8b67447ac57b4b2p1befb4jsnc02c68deb61e
+      token: #insert your own token here
       host: livescore-football.p.rapidapi.com
